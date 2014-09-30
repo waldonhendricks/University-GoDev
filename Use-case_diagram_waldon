@@ -1,0 +1,61 @@
+USE CASE DIAGRAM – WALDON HENDRICKS 204520231
+
+	The Online Taxi System uses the following use-cases.
+			
+1.	login
+2.	Book/cancel
+View booking with Google API
+3.	Availability of taxi in geographical location via Google API
+4.	database
+5.	logout
+
+The actors in this system are
+		
+1.	Passenger
+2.	System ( web services)
+
+
+Use-case: login
+o	The user will enter a username and a password.
+•	And if the entered details are valid, the user’s details are brought to the screen (as reminder)
+o	If they are invalid then an appropriate message is displayed. (Invalid details provided)
+
+
+Use-case: Book/cancel
+•	The user is allowed to book a Taxi on the Google API map
+•	He requires and the date and time as is necessary for the user. 
+•	The user has to provide details such as name, taxi number, date of travel, departure time, and can view the time /price of the taxi
+•	A passenger can also decide to cancel a Taxi after the Taxi is booked.
+•	The passenger has to provide details about Taxi for searching and details about him for confirmation of identity.
+
+Use-case: view taxi Google API on map
+o	The user after booking a Taxi can view a copy of the Taxi reserved.
+•	The user has to provide the details about Taxi number for searching in the database and passenger name for confirming passenger identity.
+
+Use-case: availability
+The passenger can view the taxis available in the database for deciding which taxi’s Taxi he wishes to book.
+ The passenger can view the details of taxis such as, Taxi number, price, departure and arrival times.
+
+
+Use-case: add/delete Taxi
+•	Only the administrator has privilege to add Taxis. 
+•	The administrator can add the Taxi on which Taxis can be booked by the passengers.
+•	The administrator has to provide details about a new Taxi such as Taxi number, price, departure time, date of travel.
+•	The administrator also has the privilege to delete Taxis that are not necessary. 
+•	The administrator has to provide details about the Taxi for searching and inform any passengers that have booked Taxis on the Taxi about the change and make necessary arrangements.
+
+Use-case: database
+It stores all the data that are related to this MVC Taxi system. The data include Taxi details, passenger details, taxi number details, availability details etc.
+
+Use-case: logout
+After the necessary operations have been performed on the system, the user can choose to logout from the system.
+
+Actor: passenger
+	The end-user who uses the system for booking Taxis.
+
+Actor: system administrator
+The overall administrator of the system, who does all the maintenance of details and system.
+
+
+
+
